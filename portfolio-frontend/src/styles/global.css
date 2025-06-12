@@ -1,0 +1,144 @@
+/* src/styles/global.css */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light Theme Colors */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a73e8;
+  --link-hover-color: #0b47a1;
+  --button-bg: #1a73e8;
+  --button-text: #ffffff;
+  --button-hover-bg: #155ab6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Dark theme overrides */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #90caf9;
+  --link-hover-color: #bbdefb;
+  --button-bg: #90caf9;
+  --button-text: #121212;
+  --button-hover-bg: #64b5f6;
+}
+
+/* Dashboard-specific dark mode */
+.skill-badge:hover {
+  background-color: #bae6fd !important;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+/* src/styles/global.css */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light Theme Colors */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a73e8;
+  --link-hover-color: #0b47a1;
+  --button-bg: #1a73e8;
+  --button-text: #ffffff;
+  --button-hover-bg: #155ab6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Dark theme overrides */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #90caf9;
+  --link-hover-color: #bbdefb;
+  --button-bg: #90caf9;
+  --button-text: #121212;
+  --button-hover-bg: #64b5f6;
+}
+
+/* Dashboard-specific dark mode */
+.skill-badge:hover {
+  background-color: #bae6fd !important;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}

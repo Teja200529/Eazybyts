@@ -1,0 +1,65 @@
+/* src/styles/home.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.home-title {
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-size: 26px;
+}
+
+.home-subtitle {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 16px;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease; /* ✅ Fixed */
+}
+
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.home-button.secondary {
+  background-color: #6c757d;
+}
+
+.home-button.secondary:hover {
+  background-color: #5a6268;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Endpoint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <pre id="result">Loading...</pre>
+    </div>
+
+    <script>
+        function fetchData() {
+            fetch('http://localhost:5000/test')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('result').textContent = data;
+                })
+                .catch(error => {
+                    document.getElementById('result').textContent = 'Error: ' + error;
+                });
+        }
+
+        // Fetch immediately and then every second
+        fetchData();
+        setInterval(fetchData, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* styles/register.css */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f8f9fa, #e0eafc);
+  padding: 20px;
+}
+
+.register-box {
+  background-color: rgb(129, 219, 255);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(91, 171, 59, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #000000;
+}
+
+.register-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.register-box input:focus {
+  border-color: #04044b;
+  outline: none;
+}
+
+.register-box button {
+  width: 100%;
+  background-color: #360ad3;
+  color: rgb(242, 238, 238);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-box button:hover {
+  background-color: #844938;
+}
+
+.success-message {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #842029;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}

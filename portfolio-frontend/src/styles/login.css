@@ -1,0 +1,72 @@
+/* login.css */
+
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  background-color: white;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+form h2 {
+  margin-bottom: 24px;
+  color: #390ae2;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #7e7979;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #00ff2a;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ed0882;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+.success-message {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #842029;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+}
